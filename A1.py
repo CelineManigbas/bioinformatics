@@ -43,5 +43,7 @@ print "Part 4"
 print "In the following DNA strand, the coding bases (exons) are in uppercase and noncoding are lowercase:"
 #coding = exons
 dna3 = "ATCGATCGATCGATCGACTGACTAGTCATAGCTATGCATGTAGCTACTCGATCGATCGATCGATCGATCGATCGATCGATCGATCATGCTATCATCGATCGATATCGATGCATCGACTACTAT"
-dnaUL = dna3[0:62] + dna3[62:91].lower() + dna3[91:len(dna3)]
+# up to and not including
+print dna3
+dnaUL = dna3[0:63] + dna3[63:91].lower() + dna3[91:len(dna3)]
 print dnaUL
