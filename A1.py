@@ -18,7 +18,6 @@ dna2 = "ACTGATCGATTACGTATAGTAGAATTCTATCATACATATATATCGATGCGTTCAT"
 loc = dna2.find("AATTC")
 print loc
 frag1 = len(dna1[0:loc])
-
 frag2 = len(dna1[loc-1:len(dna1)])
 print "the size of two fragments produced when the following DNA sequence"
 print dna2
