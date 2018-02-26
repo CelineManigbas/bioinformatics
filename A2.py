@@ -1,11 +1,17 @@
 #uses the bioinformatics module to figure out the percent of
-#protein of the given sequencesand amino acids
+#protein of the given sequences and amino acids
+
 import bioinformatics
 
-print bioinformatics.pctOfProtein("msrslllrfllfllllpplp", ["L"]) # should return 50
-print bioinformatics.pctOfProtein("MSRSLLLRFLLFLLLLPPLP", ["M"]) # should return 5
-print bioinformatics.pctOfProtein("MSRSLLLRFLLFLLLLPPLP", ['M', 'L']) # should return 55
-print bioinformatics.pctOfProtein("MSRSLLLRFLLFLLLLPPLP", ['F', 's', 'L']) # should return 70
+dnaSeq = "msrslllrfllfllllpplp"
+print "%.f %% of %s is %s" % (bioinformatics.pctOfProtein("msrslllrfllfllllpplp", ["L"]), dnaSeq, 'l') 
+    # should return 50
+print "%.f %% of %s is %s" %(bioinformatics.pctOfProtein("MSRSLLLRFLLFLLLLPPLP", ["M"]), dnaSeq, 'm') 
+    # should return 5
+print "%.f %% of %s is %s" % (bioinformatics.pctOfProtein("MSRSLLLRFLLFLLLLPPLP", ['M', 'L']), dnaSeq, "m or l") 
+    # should return 55
+print "%.f %% of %s is %s" % (bioinformatics.pctOfProtein("MSRSLLLRFLLFLLLLPPLP", ['F', 's', 'L']), dnaSeq, "f, s, or l") 
+    # should return 70
 
 
 
