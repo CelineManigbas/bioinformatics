@@ -32,7 +32,7 @@ count = 0
 for num in startPos:
     # print num
     # print "count = %i, count + 1 = %i" % (startPos[count], startPos[count+1] ) 
-    print "%i - %i" % (startPos[count+1], startPos[count])
+    #print "%i - %i" % (startPos[count+1], startPos[count])
     length = startPos[count + 1] - startPos[count]
     print "one fragment size is %i" % length
     if count != (len(startPos) - 2):
