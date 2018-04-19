@@ -41,10 +41,10 @@ def translate_dna(sequence):
     count = 0; 
     aminoAcids = ""
     while count < len(sequence):  
-        codon = sequence[count:count + 3] #up to and not including count + 1
+        codon = sequence[count:count + 3] #up to and not including count + 3
         if codon in gencode:
             aminoAcids = aminoAcids + gencode[codon]
         count = count + 3
-    print aminoAcids
+    return aminoAcids
 
     
