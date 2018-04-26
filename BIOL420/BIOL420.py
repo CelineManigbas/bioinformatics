@@ -1,21 +1,14 @@
-#Celine Manigbas 
-# Date : 04/26/18
-# BIOL420 : Bioinformatics
-
-
-#   atContent
 # returns the atContent of a sequence
 def atContent(dna):
-    at = (dna.count("A") + dna.count("T"))/float(len(dna))
+    at = (dna.count("a") + dna.count("t"))/float(len(dna))
     return at 
+    
 
-#   extractExon
 #returns the exon when given the start and stop
 def extractExon(dna, start, stop):
     exon = dna[start-1:stop]
     return exon
 
-#   pctOfProtein
 # returns the percent of the protein that one 
 # or more amino acids make up
 def pctOfProtein(protein, codes):
@@ -28,9 +21,6 @@ def pctOfProtein(protein, codes):
     percent = (count/float(len(protein))) * 100
     return percent
     
-#   translate_dna  
-# takes a sequence, groups it into 3's
-# and returns the protein 
 def translate_dna(sequence):
     gencode = {
     'ATA':'I', 'ATC':'I', 'ATT':'I', 'ATG':'M',
